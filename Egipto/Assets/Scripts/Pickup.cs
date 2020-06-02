@@ -15,9 +15,9 @@ public class Pickup : MonoBehaviour
 
     }
 
-    /*void OnMouseUp()
+    void OnMouseUp()
     {
         this.transform.parent = null;
         GetComponent<Rigidbody>().useGravity = true;
-    }*/
+    }
 }

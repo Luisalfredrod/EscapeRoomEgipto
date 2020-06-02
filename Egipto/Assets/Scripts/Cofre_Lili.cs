@@ -18,7 +18,7 @@ public class Cofre_Lili : MonoBehaviour
     {
         cajaAbriendose = false;
         cajaCerrada = true;
-        inc = -0.8f;
+        inc = -0.95f;
 
         anguloActual = 0;
 
@@ -34,7 +34,7 @@ public class Cofre_Lili : MonoBehaviour
 
             if (cajaCerrada)
             {
-                inc = -0.8f;
+                inc = -0.95f;
                 if (anguloActual <= -100)
                 {
                     cajaAbriendose = false;
@@ -43,7 +43,7 @@ public class Cofre_Lili : MonoBehaviour
             }
             else
             {
-                inc = 0.8f;
+                inc = 0.95f;
                 if (anguloActual >= 0)
                 {
                     cajaAbriendose = false;

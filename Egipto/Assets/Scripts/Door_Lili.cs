@@ -18,7 +18,7 @@ public class Door_Lili : MonoBehaviour
     {
         puertaAbriendose = false;
         puertaCerrada = true;
-        inc = -0.6f;
+        inc = -0.1f;
 
         anguloActual = 0;
 
@@ -29,21 +29,28 @@ public class Door_Lili : MonoBehaviour
     {
         if (puertaAbriendose)
         {
-            tapapuerta.transform.Rotate(0, inc, 0);
+            tapapuerta.transform.Translate(0, inc, 0);
             anguloActual += inc;
+            
 
             if (puertaCerrada)
             {
-                inc = -0.6f;
-                if (anguloActual <= -160)
+
+                inc = -0.1f;
+                if (anguloActual <= -10)
                 {
+
                     puertaAbriendose = false;
                     puertaCerrada = false;
+                    {
+                        Destroy(gameObject);
+                    }
+
                 }
             }
             else
             {
-                inc = 0.6f;
+                inc = 0.1f;
                 if (anguloActual >= 0)
                 {
                     puertaAbriendose = false;
@@ -60,5 +67,6 @@ public class Door_Lili : MonoBehaviour
     {
         puertaAbriendose = true;
         sonido.Play();
+        
     }
 }
