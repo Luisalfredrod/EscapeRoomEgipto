@@ -10,6 +10,7 @@ public class LogicaGemas : MonoBehaviour
     static int n = 0;
     static AudioSource openCofre;
     static AudioSource bien;
+    static AudioSource mal;
 
     
     
@@ -19,7 +20,7 @@ public class LogicaGemas : MonoBehaviour
     {
         openCofre = GameObject.Find("AudioCofreGemas").GetComponent<AudioSource>();
         bien = GameObject.Find("AudioGemaBien").GetComponent <AudioSource>();
-
+        mal = GameObject.Find("AudioGemaMal").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -47,6 +48,7 @@ public class LogicaGemas : MonoBehaviour
         else
         {
             Debug.Log("Incorrecto: " + nombre);
+            mal.Play();
             n = 0;
         }
     }
