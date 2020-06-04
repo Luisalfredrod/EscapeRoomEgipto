@@ -1,0 +1,66 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AbrirCofre : MonoBehaviour
+{
+    static bool cajaAbriendose;
+    bool cajaCerrada;
+
+    public GameObject tapa;
+
+
+    float inc;
+    float anguloActual;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        cajaAbriendose = false;
+        cajaCerrada = true;
+        inc = -0.95f;
+
+        anguloActual = 0;
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (cajaAbriendose)
+        {
+            tapa.transform.Rotate(inc, 0, 0);
+            anguloActual += inc;
+
+            if (cajaCerrada)
+            {
+                inc = -0.95f;
+                if (anguloActual <= -100)
+                {
+                    cajaAbriendose = false;
+                    cajaCerrada = false;
+                }
+            }
+            else
+            {
+                inc = 0.95f;
+                if (anguloActual >= 0)
+                {
+                    cajaAbriendose = false;
+                    cajaCerrada = true;
+                }
+            }
+
+
+
+        }
+
+    }
+    public static void triggerCode()
+    {
+        cajaAbriendose = true;
+    }
+
+
+
+}
