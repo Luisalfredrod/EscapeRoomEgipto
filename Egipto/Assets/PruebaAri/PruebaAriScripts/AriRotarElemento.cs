@@ -14,6 +14,7 @@ public class AriRotarElemento : MonoBehaviour
     public Light luz;
     public int n;
     public AudioSource sonido;
+    public GameObject PruebaIsra; 
    
     private void FixedUpdate()
     {
@@ -29,7 +30,8 @@ public class AriRotarElemento : MonoBehaviour
                 if (AriLogicaJuego.verificar() == true)
                 {
                     sonido.Play();
-                    
+                    PruebaIsra.SetActive(true);
+
 
 
 
