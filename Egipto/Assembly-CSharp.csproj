@@ -55,12 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameLogic.cs" />
      <Compile Include="Assets\Intro\MainMenu.cs" />
      <Compile Include="Assets\PruebaAri\PruebaAriScripts\AriLogicaJuego.cs" />
      <Compile Include="Assets\PruebaAri\PruebaAriScripts\AriRotarElemento.cs" />
      <Compile Include="Assets\Rusty Flashlight\Scripts\FlashlightToggle.cs" />
-     <Compile Include="Assets\Rusty Flashlight\Scripts\SeleccionarPiedra.cs" />
      <Compile Include="Assets\Scripts\AbrirCofre.cs" />
      <Compile Include="Assets\Scripts\AbrirPuertaMel.cs" />
      <Compile Include="Assets\Scripts\ActivaLuz.cs" />
@@ -77,10 +75,8 @@
      <Compile Include="Assets\Scripts\MoverLuz.cs" />
      <Compile Include="Assets\Scripts\moverObjeto.cs" />
      <Compile Include="Assets\Scripts\Pickup.cs" />
-     <Compile Include="Assets\Scripts\ReconocerPiedras.cs" />
      <Compile Include="Assets\Scripts_Mel\GameLogic.cs" />
-     <Compile Include="Assets\Scripts_Mel\moverObjeto.cs" />
-     <Compile Include="Assets\Scripts_Mel\TocarPiedras.cs" />
+     <Compile Include="Assets\Scripts_Mel\leerPiedra.cs" />
      <Compile Include="Assets\Sensor Luz\DetectarLuz.cs" />
      <Compile Include="Assets\Sensor Luz\playVideoFinal.cs" />
      <Compile Include="Assets\torch\scene\script\TorchSlider.cs" />

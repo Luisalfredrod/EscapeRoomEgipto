@@ -25,17 +25,11 @@ public class GameLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (opening && veces < 30)
-        {
-
-            gate.transform.Translate(0f, increment, 0f);
-            veces++;
-        }
+      
     }
 
 
-    public static void agregarPiedra(string nombre)
-
+    public static void reconocerPiedra(string nombre)
     {
         if (nombre == respuesta[n])
         {
@@ -43,24 +37,19 @@ public class GameLogic : MonoBehaviour
             correct.Play();
             n++;
 
-
             if (n == 4)
             {
                 open.Play();
                 opening = true;
                 Debug.Log("----has despertado a Akenatón-----");
-
+                AbrirPuertaMel.triggerCode();
             }
         }
         else
         {
-
             Debug.Log("-----mal-------");
             incorrect.Play();
             n = 0;
-
-
         }
-
     }
 }
