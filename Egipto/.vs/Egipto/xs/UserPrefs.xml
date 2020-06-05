@@ -1,13 +1,8 @@
 ﻿<Properties StartupConfiguration="{FF59E231-D1FF-7EC6-36DC-E7A6D591389F}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ReconocerPiedras.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sensor Luz/playVideoFinal.cs">
     <Files>
-      <File FileName="Assets/GameLogic.cs" Line="46" Column="12" />
-      <File FileName="Assets/Scripts/LogicaGemas.cs" />
-      <File FileName="Assets/Scripts/AbrirCofre.cs" />
-      <File FileName="Assets/Scripts/AbrirPuertaMel.cs" />
-      <File FileName="Assets/Scripts/TocarPiedras.cs" Line="25" Column="1" />
-      <File FileName="Assets/Scripts/KeypadPiedras.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ReconocerPiedras.cs" Line="6" Column="5" />
+      <File FileName="Assets/Sensor Luz/DetectarLuz.cs" Line="44" Column="13" />
+      <File FileName="Assets/Sensor Luz/playVideoFinal.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,8 +12,9 @@
               <Node name="Rusty Flashlight" expanded="True">
                 <Node name="Scripts" expanded="True" />
               </Node>
-              <Node name="Scripts" expanded="True">
-                <Node name="ReconocerPiedras.cs" selected="True" />
+              <Node name="Scripts" expanded="True" />
+              <Node name="Sensor Luz" expanded="True">
+                <Node name="playVideoFinal.cs" selected="True" />
               </Node>
               <Node name="Texturas" expanded="True">
                 <Node name="Mel" expanded="True" />
@@ -31,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c8761e2a-7e3b-467b-9f14-d7a2c631cfce" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5d1eb1a7-7189-42e1-a8f8-e3050e69df33" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
